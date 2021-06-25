@@ -1,0 +1,14 @@
+.content-box {
+  -webkit-box-shadow: 0px 3px 6px 2px rgba(196, 190, 187, 0.53);
+  box-shadow: 0px 3px 6px 2px rgba(196, 190, 187, 0.53);
+  padding: 3rem 1.75rem;
+  margin-bottom: 6.25rem;
+  @include responsive(tablet) {
+    padding: 2.8rem 3.4rem;
+    min-height: 47.5rem;
+  }
+  @include responsive(desktop) {
+    width: 47%;
+    min-height: 0;
+  }
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Nexxar Aufgabe</title>
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <!-- ****** START HEADER ****** -->
+    <header class="header">
+      <div class="header__logo-box">
+        <img class="header__logo" alt="nexxar-logo" src="img/logo.svg" />
+      </div>
+      <div class="header__mid-box">management report</div>
+      <div class="header__navigation-box">
+        <nav class="navigation">
+          <input
+            type="checkbox"
+            class="navigation__input-check"
+            id="navigation__input-check"
+          />
+          <label for="navigation__input-check" class="navigation__icon"
+            ><span></span
+          ></label>
+          <ul class="navigation__menu">
+            <li class="navigation__back-to-prim">
+              <div>
+                <span class="navigation__back-to-prim--icon"
+                  ><i class="fas fa-chevron-left"></i
+                ></span>
+                <span class="navigation__back-to-prim--text">primary menu</span>
+              </div>
+            </li>
+            <li class="navigation__menu-item">
+              <a href="#">
+                <div>
+                  <span class="navigation__menu-item--text"
+                    >to our shareholders</span
+                  >
+                  <span class="navigation__menu-item--icon"
+                    ><i class="fas fa-chevron-right"></i
+                  ></span>
+                </div>
+              </a>
+            </li>
+            <li
+              class="navigation__menu-item navigation__menu-item-focus"
+              id="navigation-main-menu-item"
+            >
+              <div>
+                <span class="navigation__menu-item--text"
+                  >management report</span
+                >
+                <span class="navigation__menu-item--icon"
+                  ><i class="fas fa-chevron-right"></i
+                ></span>
+              </div>
+
+              <div class="navigation__submenu-wrapper">
+                <ul class="navigation__submenu">
+                  <li
+                    class="
+                      navigation__submenu-item navigation__submenu-first-item
+                    "
+                  >
+                    management report
+                  </li>
+                  <li class="navigation__submenu-item">
+                    <a href="#">Chairman's letter</a>
+                  </li>
+                  <li class="navigation__submenu-item">
+                    <a href="#">CEO's letter</a>
+                  </li>
+                  <li class="navigation__submenu-item">
+                    <a href="#">Our corporategovernance approach</a>
+                  </li>
+                  <li class="navigation__submenu-item">
+                    <a href="#">Our Board of Directors</a>
+                  </li>
+                  <li class="navigation__submenu-item">
+                    <a href="#">Our Executive Committee</a>
+                  </li>
+                  <li
+                    class="
+                      navigation__submenu-item navigation__submenu-item-focus
+                    "
+                  >
+                    <a href="#">Compensation Report summery</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation__menu-item">
+              <a href="#">
+                <div>
+                  <span class="navigation__menu-item--text"
+                    >financial statements</span
+                  >
+                  <span class="navigation__menu-item--icon"
+                    ><i class="fas fa-chevron-right"></i
+                  ></span>
+                </div>
+              </a>
+            </li>
+            <li class="navigation__menu-item">
+              <a href="#">
+                <div>
+                  <span class="navigation__menu-item--text"
+                    >corporate governance</span
+                  >
+                  <span class="navigation__menu-item--icon"
+                    ><i class="fas fa-chevron-right"></i
+                  ></span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- ****** END HEADER ****** -->
+
+    <!-- ****** START MAIN ****** -->
+    <main class="main">
+      <section class="section-description u-margin-bottom-big">
+        <h1 class="title-primary">Compensation Report summery</h1>
+        <p class="section-description__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+          mollitia quod odio consequatur architecto ipsa reprehenderit deleniti.
+          Unde eaque, nobis asperiores, cupiditate autem saepe minima ducimus
+          non architecto porro commodi.
+        </p>
+      </section>
+
+      <section class="section-content u-margin-bottom-big">
+        <div class="graph content-box">
+          <h2 class="graph__title title-secondary">lorem graph</h2>
+          <picture class="graph__img">
+            <source
+              srcset="img/graphic-desktop.svg"
+              media="(min-width: 47.5em)"
+            />
+            <img src="img/graphic-mobile.svg" alt="lorem graph" />
+          </picture>
+
+          <p class="graph__text">
+            <span>1)</span>Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Minus non veritatis.
+          </p>
+        </div>
+
+        <div class="testimonial content-box">
+          <span class="testimonial__icon"
+            ><i class="fas fa-quote-left"></i
+          ></span>
+          <p class="testimonial__text">
+            <q
+              >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe,
+              voluptatem voluptatibus laborum at, unde.
+            </q>
+          </p>
+          <div class="testimonial__person">
+            <span class="testimonial__person--name">Jane Doe</span>
+            <span class="testimonial__person--role"
+              >Director of Lorem Ipsom</span
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ****** END MAIN ****** -->
+
+    <!-- ****** START FOOTER ****** -->
+    <footer class="footer">
+      <div class="footer__social">
+        <a href="#">
+          <img src="img/facebook.svg" alt="facobook" />
+        </a>
+
+        <a href="#">
+          <img src="img/twitter.svg" alt="twitter" />
+        </a>
+
+        <a href="#">
+          <img src="img/linkedin.svg" alt="linkedin" />
+        </a>
+
+        <a href="#">
+          <img src="img/ig.svg" alt="instagram" />
+        </a>
+      </div>
+      <div class="footer__signeture">
+        <img src="img/digital-reporting-evolved.svg" alt="signeture" />
+      </div>
+    </footer>
+    <!-- ****** END FOOTER ****** -->
+
+    <!--
+
+    -->
+
+    <script src="index.js"></script>
+  </body>
+</html>

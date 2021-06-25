@@ -1,0 +1,38 @@
+.footer {
+  border-bottom: 2px solid $color-gray4;
+
+  @include responsive(tablet) {
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  @include responsive(desktop) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  &__social {
+    @include flex-center;
+    @include responsive(tablet) {
+      margin-top: 1.6rem;
+    }
+
+    a {
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+    }
+
+    img {
+      width: 3rem;
+    }
+  }
+
+  &__signeture {
+    display: none;
+    @include responsive(tablet) {
+      display: block;
+    }
+  }
+}
